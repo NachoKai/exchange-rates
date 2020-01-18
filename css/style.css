@@ -297,4 +297,8 @@ ul.currencies li .close {
 ul.currencies li .close:hover {
   color: #fff;
 }
+
+input:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
