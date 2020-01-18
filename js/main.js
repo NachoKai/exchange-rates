@@ -319,7 +319,7 @@ function newCurrenciesListItem(currency) {
         `<li class="currency ${currency.abbreviation===baseCurrency ? "base-currency" : ""}" id=${currency.abbreviation}>
       <img src=${currency.flagURL} class="flag">
       <div class="info">
-        <p class="input"><span class="currency-symbol">${currency.symbol}</span><input placeholder="0.0000" value=${inputValue}></p>
+        <p class="input"><span class="currency-symbol">${currency.symbol}</span><input type="number" min="0" placeholder="0.00" value=${inputValue}></p>
         <p class="currency-name">${currency.abbreviation} - ${currency.name}</p>
         <p class="base-currency-rate">1 ${baseCurrency} = ${exchangeRate} ${currency.abbreviation}</p>
       </div>
